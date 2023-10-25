@@ -1,0 +1,22 @@
+<div class="informaNacoesPrinci">
+
+  <div class="container text-center">
+
+    <div class="row">
+
+      <div class="col">
+            <div class="principal_info">
+              <div *ngFor="let item of dadosDaAPIRG, let i = index" class="conteudo_paises">
+                  <img src="{{item.flags.png }}"  class="card-img-top" alt="...">
+                  <h2 class="card-title">{{ item.name.common }}</h2>
+                  <p class="card-text">Population: <span class="population">{{ item.population }}</span></p>
+                  <p class="card-text">Region: <span class="region">{{ item.region }}</span></p>
+                  <p class="card-text">Capital: <span class="capital">{{ item.capital }}</span></p>
+                  <p class="card-text">Borders: <span class="capital">{{ item.borders }}</span></p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+</div>

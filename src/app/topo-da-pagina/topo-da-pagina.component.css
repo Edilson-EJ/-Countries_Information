@@ -1,0 +1,23 @@
+.titulo-pagina{
+
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 1rem;
+
+  color: #ffffff;
+  background-color: #262f3a;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.moon-button {
+  padding: 10px 20px;
+  background-size: cover;
+  background-color: #262f3a;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
