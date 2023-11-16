@@ -19,7 +19,12 @@ export class ApiPaisesService {
   //CHAMADA GET DE TODOS OS PAÍSES
   private apiUrlTD = 'https://restcountries.com/v3.1/all'
   //CHAMADA GET POR REGIÃO
-  private apiUrlRG = 'https://restcountries.com/v3.1/region/'
+  private apiUrlAM = 'https://restcountries.com/v3.1/region/america'
+  private apiUrlEU = 'https://restcountries.com/v3.1/region/europe'
+  private apiUrlAF = 'https://restcountries.com/v3.1/region/africa'
+  private apiUrlAS = 'https://restcountries.com/v3.1/region/asia'
+  private apiUrlOC = 'https://restcountries.com/v3.1/region/oceania'
+
 
   constructor(private httpClient: HttpClient) {}
 
@@ -53,7 +58,19 @@ export class ApiPaisesService {
     return this.httpClient.get<ItensAPI[]>(this.apiUrlTD);
   }
 
-  getDadosDaAPIRG(): Observable<ItensAPI[]> {
-    return this.httpClient.get<ItensAPI[]>(this.apiUrlRG + this.regiao);
+  getDadosDaAPIAM(): Observable<ItensAPI[]> {
+    return this.httpClient.get<ItensAPI[]>(this.apiUrlAM);
+  }
+  getDadosDaAPIEU(): Observable<ItensAPI[]> {
+    return this.httpClient.get<ItensAPI[]>(this.apiUrlEU);
+  }
+  getDadosDaAPIAF(): Observable<ItensAPI[]> {
+    return this.httpClient.get<ItensAPI[]>(this.apiUrlAF);
+  }
+  getDadosDaAPIAS(): Observable<ItensAPI[]> {
+    return this.httpClient.get<ItensAPI[]>(this.apiUrlAS);
+  }
+  getDadosDaAPIOC(): Observable<ItensAPI[]> {
+    return this.httpClient.get<ItensAPI[]>(this.apiUrlOC);
   }
 }

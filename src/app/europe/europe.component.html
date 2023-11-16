@@ -6,7 +6,7 @@
 
       <div class="col">
             <div class="principal_info">
-              <div *ngFor="let item of dadosDaAPITD, let i = index" class="conteudo_paises">
+              <div *ngFor="let item of dadosDaAPIEU, let i = index" class="conteudo_paises">
                   <img src="{{item.flags.png }}"  class="card-img-top" alt="...">
                   <h2 class="card-title">{{ item.name.common }}</h2>
                   <p class="card-text">Population: <span class="population">{{ item.population }}</span></p>
@@ -20,3 +20,4 @@
   </div>
 
 </div>
+

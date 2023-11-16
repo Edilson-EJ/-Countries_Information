@@ -11,14 +11,13 @@ export class RegiaoComponent implements OnInit {
   dadosDaAPITD: any[] = [];
 
   dadosDaAPIRG: any[] = [];
+  nome: string = ''
 
   constructor(private apiPaisesService: ApiPaisesService) {}
 
   ngOnInit(): void {
     //TODOS OS PAÍSES
     this.mostraDadosTD();
-    //PA[ISES POR REGIÃO
-    this.mostraDadosRG();
   }
 
   mostraDadosTD(){
@@ -28,11 +27,5 @@ export class RegiaoComponent implements OnInit {
     })
   }
 
-  mostraDadosRG(){
-    this.apiPaisesService.getDadosDaAPIRG().subscribe( data =>{
-      this.dadosDaAPIRG = data;
-      console.log(this.dadosDaAPIRG)
-    })
-  }
 
 }

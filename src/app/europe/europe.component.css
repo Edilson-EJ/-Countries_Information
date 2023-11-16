@@ -1,0 +1,56 @@
+.informaNacoesPrinci{
+  color: #ffffff;
+  background-color: #262f3a;
+}
+
+.col{
+  margin: 2rem;
+  text-align:center;
+
+}
+
+.principal_info{
+  font-family: 'Roboto Condensed', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.conteudo_paises{
+  margin-bottom: 1.5rem;
+  border: 5px  double #404953;
+  padding: 0.6rem;
+
+  color: #ffffff;
+  background-color: #262f3a;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+
+}
+
+
+.card-title{
+  text-align: center;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 200px;
+}
+
+.btn-primary{
+  display: flex;
+  justify-items: center;
+  text-align: center;
+}

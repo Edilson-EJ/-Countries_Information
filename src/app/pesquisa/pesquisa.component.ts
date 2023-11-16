@@ -1,4 +1,7 @@
-import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { ApiPaisesService } from '../services/api-paises.service';
+
 
 @Component({
   selector: 'app-pesquisa',
@@ -11,16 +14,16 @@ export class PesquisaComponent implements OnInit{
   continentes: string[] = ['Africa','America','Asia','Europe','Oceania','Continents']
   idC: string = ''
 
-  @Output() pesquisaRealizada = new EventEmitter<string>();
+  constructor(private apiPaisesService: ApiPaisesService,) {}
+
 
   ngOnInit(): void {
-    this.realizarPesquisa();
+    this.realizarPesquisa(this.termoPesquisa);
 
   }
 
-  realizarPesquisa() {
-    this.pesquisaRealizada.emit(this.termoPesquisa);
-    console.log(this.termoPesquisa)
+  realizarPesquisa(nome:string) {
+
   }
 
   optionSelec(index:number){

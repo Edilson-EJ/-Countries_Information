@@ -9,7 +9,12 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component'
 import { FormsModule } from '@angular/forms';
 import { NacoesInformacoesComponent } from './nacoes-informacoes/nacoes-informacoes.component';
 import { HttpClientModule } from '@angular/common/http';
-import { RegiaoComponent } from './regiao/regiao.component'
+import { RegiaoComponent } from './regiao/regiao.component';
+import { AmericaComponent } from './america/america.component';
+import { EuropeComponent } from './europe/europe.component';
+import { AfricaComponent } from './africa/africa.component';
+import { AsiaComponent } from './asia/asia.component';
+import { OceaniaComponent } from './oceania/oceania.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { RegiaoComponent } from './regiao/regiao.component'
     TopoDaPaginaComponent,
     PesquisaComponent,
     NacoesInformacoesComponent,
-    RegiaoComponent
+    RegiaoComponent,
+    AmericaComponent,
+    EuropeComponent,
+    AfricaComponent,
+    AsiaComponent,
+    OceaniaComponent
   ],
   imports: [
     BrowserModule,

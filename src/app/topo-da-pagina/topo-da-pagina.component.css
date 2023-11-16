@@ -21,3 +21,10 @@
   border: none;
   cursor: pointer;
 }
+
+@media(max-width: 600px){
+  div{
+    display: flex;
+    flex-direction: column;
+  }
+}
